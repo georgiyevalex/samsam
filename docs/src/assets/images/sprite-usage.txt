@@ -1,0 +1,15 @@
+Спрайт собираем тут https://svgsprit.es/
+
+
+<svg class="icon">
+  <use xlink:href="#exit-right"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#message-text"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#notification"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#question-2"></use>
+</svg>
