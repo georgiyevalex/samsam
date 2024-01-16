@@ -1,7 +1,57 @@
- @import './base.css';
+@import 'base';
 
- .samsam-content-block {
-   max-width: var(--samsam-content-width);
-   width: 100%;
-   margin: 0 auto;
- }
+[data-kt-app-header-fixed=true] .app-header {
+  position: sticky;
+}
+
+.app-header {
+  svg.icon path {
+    fill: #808290;
+  }
+}
+
+
+/*
+#kt_app_body {
+  background-color: #fff; //Нужно только для страницы /new-project
+}
+ */
+
+#kt_auth_root {
+  background: url("/src/assets/images/auth/auth-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.dashboard-app {
+  .form-select {
+    min-width: 160px;
+    box-sizing: border-box;
+  }
+  .menu-item svg.icon {
+    margin-right: 15px;
+  }
+  .card-body .col {
+    border-radius: 6px;
+    border: 0.5px dashed #D8D8E5;
+  }
+  .card-body .col.green {
+    border: 0.5px dashed #0EAB4C;
+    background: #EFFFF5;
+    div {
+      color: #0EAB4C !important;
+    }
+  }
+  .card-body .col.red {
+    border: 0.5px dashed #E92121;
+    background: #FFF1F1;
+    div {
+      color: #E92121 !important;
+    }
+  }
+}
+
+h2 {
+  font-family: 'Golos Text';
+}

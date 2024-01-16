@@ -1,154 +1,76 @@
 <template>
-    <!--begin::Basic info-->
     <div class="card mb-5 mb-xl-10" data-select2-id="select2-data-134-60w6">
-        <!--begin::Card header-->
         <div class="card-header border-0 cursor-pointer" role="button" data-bs-toggle="collapse" data-bs-target="#kt_account_profile_details" aria-expanded="true" aria-controls="kt_account_profile_details">
-            <!--begin::Card title-->
             <div class="card-title m-0">
                 <h3 class="fw-bold m-0">Редактировать профиль</h3>
             </div>
-            <!--end::Card title-->
         </div>
-        <!--begin::Card header-->
-
-        <!--begin::Content-->
         <div id="kt_account_settings_profile_details" class="collapse show" data-select2-id="select2-data-kt_account_settings_profile_details">
-            <!--begin::Form-->
             <form id="kt_account_profile_details_form" class="form fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" data-select2-id="select2-data-kt_account_profile_details_form">
-                <!--begin::Card body-->
                 <div class="card-body border-top p-9">
-                    <!--begin::Input group-->
                     <div class="row mb-6">
-                        <!--begin::Label-->
                         <label class="col-lg-4 col-form-label fw-semibold fs-6">Аватар:</label>
-                        <!--end::Label-->
-
-                        <!--begin::Col-->
                         <div class="col-lg-8">
-                            <!--begin::Image input-->
                             <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url('/src/assets/images/profile/blank.svg')">
-                                <!--begin::Preview existing avatar-->
                                 <div class="image-input-wrapper w-125px h-125px" style="background-image: url(https://dummyimage.com/120x120/b04cb0/ffffff.png&text=A)"></div>
-                                <!--end::Preview existing avatar-->
-
-                                <!--begin::Label-->
                                 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" aria-label="Change avatar" data-bs-original-title="Change avatar" >
                                     <i class="ki-duotone ki-pencil fs-7"><span class="path1"></span><span class="path2"></span></i>
-                                    <!--begin::Inputs-->
                                     <input type="file" name="avatar" accept=".png, .jpg, .jpeg">
                                     <input type="hidden" name="avatar_remove">
-                                    <!--end::Inputs-->
                                 </label>
-                                <!--end::Label-->
-
-                                <!--begin::Cancel-->
                                 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" aria-label="Cancel avatar" data-bs-original-title="Cancel avatar" >
-                                <i class="ki-duotone ki-cross fs-2"><span class="path1"></span><span class="path2"></span></i>                            </span>
-                                <!--end::Cancel-->
-
-                                <!--begin::Remove-->
+                        <i class="ki-duotone ki-cross fs-2"><span class="path1"></span><span class="path2"></span></i>                            </span>
                                 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" aria-label="Remove avatar" data-bs-original-title="Remove avatar" >
-                                <i class="ki-duotone ki-cross fs-2"><span class="path1"></span><span class="path2"></span></i>                            </span>
-                                <!--end::Remove-->
+                        <i class="ki-duotone ki-cross fs-2"><span class="path1"></span><span class="path2"></span></i>                            </span>
                             </div>
-                            <!--end::Image input-->
-
-                            <!--begin::Hint-->
                             <div class="form-text">Загрузите изображения в формате: png, jpg, jpeg</div>
-                            <!--end::Hint-->
                         </div>
-                        <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
-
-                    <!--begin::Input group-->
                     <div class="row mb-6">
-                        <!--begin::Label-->
                         <label class="col-lg-4 col-form-label required fw-semibold fs-6">ФИО:</label>
-                        <!--end::Label-->
-
-                        <!--begin::Col-->
                         <div class="col-lg-8">
-                            <!--begin::Row-->
                             <div class="row">
-                                <!--begin::Col-->
                                 <div class="col-lg-6 fv-row fv-plugins-icon-container">
                                     <input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First name" value="Селезнева">
-                                    <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
-                                <!--end::Col-->
-
-                                <!--begin::Col-->
+                                    <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                                </div>
                                 <div class="col-lg-6 fv-row fv-plugins-icon-container">
                                     <input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Last name" value="Надежда">
-                                    <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
-                                <!--end::Col-->
+                                    <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                                </div>
                             </div>
-                            <!--end::Row-->
                         </div>
-                        <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
-
-                    <!--begin::Input group-->
                     <div class="row mb-6">
-                        <!--begin::Label-->
                         <label class="col-lg-4 col-form-label required fw-semibold fs-6">Компания:</label>
-                        <!--end::Label-->
-
-                        <!--begin::Col-->
                         <div class="col-lg-8 fv-row fv-plugins-icon-container">
                             <input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Например: ООО Дизайн система" value="">
-                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
-                        <!--end::Col-->
+                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                        </div>
                     </div>
-                    <!--end::Input group-->
-
-                    <!--begin::Input group-->
                     <div class="row mb-6">
-                        <!--begin::Label-->
                         <label class="col-lg-4 col-form-label fw-semibold fs-6">
                             <span class="required">Телефоны:</span>
-
-
                         </label>
-                        <!--end::Label-->
-
                         <div class="col-lg-4 fv-row fv-plugins-icon-container">
                             <input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="Phone number" value="044 3276 454 935">
-                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div><!--begin::Col-->
+                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                        </div>
+                        <!--begin::Col-->
                         <div class="col-lg-4 fv-row fv-plugins-icon-container">
                             <input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="Дополнительный телефон (опционально)" value="">
-                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
-                        <!--end::Col-->
+                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                        </div>
                     </div>
-                    <!--end::Input group-->
-
-                    <!--begin::Input group-->
                     <div class="row mb-6">
-                        <!--begin::Label-->
                         <label class="col-lg-4 col-form-label fw-semibold fs-6">E-mail:</label>
-                        <!--end::Label-->
-
-                        <!--begin::Col-->
                         <div class="col-lg-8 fv-row">
                             <input type="text" name="website" class="form-control form-control-lg form-control-solid" placeholder="e-mail" value="nadya@ya.ru">
                         </div>
-                        <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
-
-                    <!--begin::Input group-->
-
-                    <!--end::Input group-->
-
                     <div class="row mb-6">
-                        <!--begin::Label-->
                         <label class="col-lg-4 col-form-label required fw-semibold fs-6">Выбрать язык:</label>
-                        <!--end::Label-->
-
-                        <!--begin::Col-->
                         <div class="col-lg-8 fv-row fv-plugins-icon-container" data-select2-id="select2-data-133-tewp">
-                            <!--begin::Input-->
                             <select name="language" aria-label="Select a Language" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg select2-hidden-accessible" data-select2-id="select2-data-12-kxju" tabindex="-1" aria-hidden="true" >
                                 <option value="" data-select2-id="select2-data-14-5zhp">Select a Language...</option>
                                 <option data-kt-flag="flags/indonesia.svg" value="id" data-select2-id="select2-data-136-d4kl">Bahasa Indonesia - Indonesian</option>
@@ -198,26 +120,13 @@
                                 <option data-kt-flag="flags/china.svg" value="zh-cn" data-select2-id="select2-data-180-puty">简体中文 - Simplified Chinese</option>
                                 <option data-kt-flag="flags/taiwan.svg" value="zh-tw" data-select2-id="select2-data-181-h5pf">繁體中文 - Traditional Chinese</option>
                             </select>
-
-                            <!--begin::Hint-->
-
-                            <!--end::Hint-->
-                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
-                        <!--end::Col-->
-                    </div><!--begin::Input group-->
-
-                    <!--end::Input group-->
-
+                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                        </div>
+                    </div>
                     <div class="row">
-                        <!--begin::Label-->
                         <label class="col-lg-4 col-form-label fw-semibold fs-6">
                             <span class="required">Страна:</span>
-
-
                         </label>
-                        <!--end::Label-->
-
-                        <!--begin::Col-->
                         <div class="col-lg-8 fv-row fv-plugins-icon-container" data-select2-id="select2-data-183-ont9">
                             <select name="country" aria-label="Select a Country" data-control="select2" data-placeholder="Select a country..." class="form-select form-select-solid form-select-lg fw-semibold select2-hidden-accessible" data-select2-id="select2-data-9-06q6" tabindex="-1" aria-hidden="true" >
                                 <option value="" data-select2-id="select2-data-11-vvh1">Select a Country...</option>
@@ -446,59 +355,30 @@
                                 <option data-kt-flag="flags/zambia.svg" value="ZM" data-select2-id="select2-data-406-qljp">Zambia</option>
                                 <option data-kt-flag="flags/zimbabwe.svg" value="ZW" data-select2-id="select2-data-407-9ylf">Zimbabwe</option>
                             </select>
-                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
-                        <!--end::Col-->
-                    </div><!--begin::Input group-->
-
-                    <!--end::Input group-->
-
-
-
-
-
-
-
-
-
-
-
-                    <!--end::Input group-->
+                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                        </div>
+                    </div>
                 </div>
-                <!--end::Card body-->
-
-                <!--begin::Actions-->
                 <div class="card-footer d-flex justify-content-end py-6 px-9">
                     <button type="reset" class="btn btn-light btn-active-light-primary me-2">Отмена</button>
                     <button type="submit" class="btn btn-primary" id="kt_account_profile_details_submit">Сохранить изменения</button>
                 </div>
-                <!--end::Actions-->
-                <input type="hidden"></form>
-            <!--end::Form-->
+                <input type="hidden">
+            </form>
         </div>
-        <!--end::Content-->
     </div>
-    <!--end::Notifications-->
-    <!--begin::Notifications-->
     <div class="card  mb-5 mb-xl-10">
-        <!--begin::Card header-->
         <div class="card-header border-0 cursor-pointer" role="button" data-bs-toggle="collapse" data-bs-target="#kt_account_notifications" aria-expanded="true" aria-controls="kt_account_notifications">
             <div class="card-title m-0">
                 <h3 class="fw-bold m-0">Уведомления</h3>
             </div>
         </div>
-        <!--begin::Card header-->
-
-        <!--begin::Content-->
         <div id="kt_account_settings_notifications" class="collapse show">
-            <!--begin::Form-->
             <form class="form">
-                <!--begin::Card body-->
                 <div class="card-body border-top px-9 pt-3 pb-4">
-                    <!--begin::Table-->
                     <div class="table-responsive">
                         <table class="table table-row-dashed border-gray-300 align-middle gy-6">
                             <tbody class="fs-6 fw-semibold">
-                            <!--begin::Table row-->
                             <tr>
                                 <td class="min-w-250px fs-4 fw-bold">Настройки</td>
                                 <td class="w-125px">
@@ -522,15 +402,14 @@
                                         <input class="form-check-input" type="checkbox" value="" id="kt_settings_notification_tg" checked="" data-kt-check="true" data-kt-check-target="[data-kt-settings-notification=tg]">
                                         <label class="form-check-label ps-2" for="kt_settings_notification_tg">Telegram</label>
                                     </div>
-                                </td><td class="w-125px">
-                                <div class="form-check form-check-custom form-check-solid">
-                                    <input class="form-check-input" type="checkbox" value="" id="kt_settings_notification_wapp" checked="" data-kt-check="true" data-kt-check-target="[data-kt-settings-notification=wapp]">
-                                    <label class="form-check-label ps-2" for="kt_settings_notification_wapp">WhatsApp</label>
-                                </div>
-                            </td></tr>
-                            <!--begin::Table row-->
-
-                            <!--begin::Table row-->
+                                </td>
+                                <td class="w-125px">
+                                    <div class="form-check form-check-custom form-check-solid">
+                                        <input class="form-check-input" type="checkbox" value="" id="kt_settings_notification_wapp" checked="" data-kt-check="true" data-kt-check-target="[data-kt-settings-notification=wapp]">
+                                        <label class="form-check-label ps-2" for="kt_settings_notification_wapp">WhatsApp</label>
+                                    </div>
+                                </td>
+                            </tr>
                             <tr>
                                 <td>Заявки через формы:</td>
                                 <td>
@@ -550,15 +429,14 @@
                                         <input class="form-check-input" type="checkbox" value="" id="billing3" checked="" data-kt-settings-notification="tg">
                                         <label class="form-check-label ps-2" for="billing3"></label>
                                     </div>
-                                </td><td>
-                                <div class="form-check form-check-custom form-check-solid">
-                                    <input class="form-check-input" type="checkbox" value="" id="billing4" checked="" data-kt-settings-notification="wapp">
-                                    <label class="form-check-label ps-2" for="billing4"></label>
-                                </div>
-                            </td></tr>
-                            <!--begin::Table row-->
-
-                            <!--begin::Table row-->
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-custom form-check-solid">
+                                        <input class="form-check-input" type="checkbox" value="" id="billing4" checked="" data-kt-settings-notification="wapp">
+                                        <label class="form-check-label ps-2" for="billing4"></label>
+                                    </div>
+                                </td>
+                            </tr>
                             <tr>
                                 <td>Новый заказ в магазине:</td>
                                 <td>
@@ -578,15 +456,14 @@
                                         <input class="form-check-input" type="checkbox" value="" id="team3" data-kt-settings-notification="tg">
                                         <label class="form-check-label ps-2" for="team3"></label>
                                     </div>
-                                </td><td>
-                                <div class="form-check form-check-custom form-check-solid">
-                                    <input class="form-check-input" type="checkbox" value="" id="team4" data-kt-settings-notification="wapp">
-                                    <label class="form-check-label ps-2" for="team4"></label>
-                                </div>
-                            </td></tr>
-                            <!--begin::Table row-->
-
-                            <!--begin::Table row-->
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-custom form-check-solid">
+                                        <input class="form-check-input" type="checkbox" value="" id="team4" data-kt-settings-notification="wapp">
+                                        <label class="form-check-label ps-2" for="team4"></label>
+                                    </div>
+                                </td>
+                            </tr>
                             <tr>
                                 <td>Заказ оплачен:</td>
                                 <td>
@@ -606,15 +483,14 @@
                                         <input class="form-check-input" type="checkbox" value="" id="project3" checked="" data-kt-settings-notification="tg">
                                         <label class="form-check-label ps-2" for="project3"></label>
                                     </div>
-                                </td><td>
-                                <div class="form-check form-check-custom form-check-solid">
-                                    <input class="form-check-input" type="checkbox" value="" id="project4" checked="" data-kt-settings-notification="wapp">
-                                    <label class="form-check-label ps-2" for="project4"></label>
-                                </div>
-                            </td></tr>
-                            <!--begin::Table row-->
-
-                            <!--begin::Table row-->
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-custom form-check-solid">
+                                        <input class="form-check-input" type="checkbox" value="" id="project4" checked="" data-kt-settings-notification="wapp">
+                                        <label class="form-check-label ps-2" for="project4"></label>
+                                    </div>
+                                </td>
+                            </tr>
                             <tr>
                                 <td class="border-bottom-0">Создан новый проект:</td>
                                 <td class="border-bottom-0">
@@ -634,98 +510,56 @@
                                         <input class="form-check-input" type="checkbox" value="" id="newsletter3" data-kt-settings-notification="tg">
                                         <label class="form-check-label ps-2" for="newsletter3"></label>
                                     </div>
-                                </td><td class="border-bottom-0">
-                                <div class="form-check form-check-custom form-check-solid">
-                                    <input class="form-check-input" type="checkbox" value="" id="newsletter4" data-kt-settings-notification="wapp">
-                                    <label class="form-check-label ps-2" for="newsletter4"></label>
-                                </div>
-                            </td></tr>
-                            <!--begin::Table row-->
+                                </td>
+                                <td class="border-bottom-0">
+                                    <div class="form-check form-check-custom form-check-solid">
+                                        <input class="form-check-input" type="checkbox" value="" id="newsletter4" data-kt-settings-notification="wapp">
+                                        <label class="form-check-label ps-2" for="newsletter4"></label>
+                                    </div>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
-                    <!--end::Table-->
                 </div>
-                <!--end::Card body-->
-
-                <!--begin::Card footer-->
                 <div class="card-footer d-flex justify-content-end py-6 px-9">
                     <button class="btn btn-light btn-active-light-primary me-2">Отмена</button>
                     <button class="btn btn-primary  px-6">Сохранить изменения</button>
                 </div>
-                <!--end::Card footer-->
             </form>
-            <!--end::Form-->
         </div>
-        <!--end::Content-->
     </div>
-    <!--end::Notifications-->
-    <!--begin::Deactivate Account-->
     <div class="card  ">
-
-        <!--begin::Card header-->
         <div class="card-header border-0 cursor-pointer" role="button" data-bs-toggle="collapse" data-bs-target="#kt_account_deactivate" aria-expanded="true" aria-controls="kt_account_deactivate">
             <div class="card-title m-0">
                 <h3 class="fw-bold m-0">Удалить аккаунт</h3>
             </div>
         </div>
-        <!--end::Card header-->
-
-        <!--begin::Content-->
         <div id="kt_account_settings_deactivate" class="collapse show">
-            <!--begin::Form-->
             <form id="kt_account_deactivate_form" class="form fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate">
-
-                <!--begin::Card body-->
                 <div class="card-body border-top p-9">
-
-                    <!--begin::Notice-->
                     <div class="notice d-flex bg-light-warning rounded border-warning border border-dashed p-6">
-                        <!--begin::Icon-->
                         <i class="ki-duotone ki-information fs-2tx text-warning me-4"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>        <!--end::Icon-->
-
-                        <!--begin::Wrapper-->
                         <div class="d-flex flex-stack flex-grow-1 ">
-                            <!--begin::Content-->
                             <div class=" fw-semibold">
                                 <h4 class="text-gray-900 fw-bold">Вы хотите деактивируете свою учетную запись</h4>
-
                                 <div class="fs-6 text-gray-700 ">В целях дополнительной безопасности, вам необходимо подтвердить действие через адрес электронной почты или номер телефона</div>
                             </div>
-                            <!--end::Content-->
-
                         </div>
-                        <!--end::Wrapper-->
                     </div>
-                    <!--end::Notice-->
-
-                    <!--begin::Form input row-->
-
-                    <!--end::Form input row-->
                 </div>
-                <!--end::Card body-->
-
-                <!--begin::Card footer-->
                 <div class="card-footer d-flex justify-content-end py-6 px-9">
                     <button id="kt_account_deactivate_account_submit" type="submit" class="btn btn-danger fw-semibold">Удалить</button>
                 </div>
-                <!--end::Card footer-->
-
-                <input type="hidden"></form>
-            <!--end::Form-->
+                <input type="hidden">
+            </form>
         </div>
-        <!--end::Content-->
     </div>
-    <!--end::Deactivate Account-->
-
 </template>
-
 <script>
 export default {
 
 }
 </script>
-
 <style lang="scss" scoped>
-
 </style>

@@ -6,3 +6,17 @@
 h1.page-heading {
 	font-size: 24px !important;
 }
+
+svg.icon {
+	width: 24px;
+	height: 24px;
+}
+
+svg.hidden {
+	display: none;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+}
