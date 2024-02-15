@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.10",
-    "vue-router": "^4.2.5"
+
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.1",
     "sass": "^1.69.5",
-    "vite": "^5.0.5"
+    "eslint": "^8.56.0",
+    "eslint-plugin-diff": "^2.0.3",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "vite": "^4.4.5"
   }
 }
