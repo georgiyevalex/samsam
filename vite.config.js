@@ -16,8 +16,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '/html/': resolve(__dirname, 'html/'),
-      '/src/assets/': resolve(__dirname, 'src/assets/'),
+      'html/': resolve(__dirname, 'html/'),
+      'src/assets/': resolve(__dirname, 'src/assets/'),
     },
   },
 });
