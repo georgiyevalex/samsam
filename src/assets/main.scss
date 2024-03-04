@@ -1,130 +1,220 @@
+:root {
+    --bs-primary: #ED2036;
+    --bs-success: #136099;
+    --bs-danger: #FF5C33;
+    --bs-warning: #FFC700;
+    --bs-text-primary: #ED2036;
+    --bs-text-success: #136099;
+    --bs-text-danger: #FF5C33;
+    --bs-text-warning: #FFC700;
+    --bs-primary-active: #E94D65;
+    --bs-success-active: #2A7CBF;
+    --bs-danger-active: #FF7754;
+    --bs-warning-active: #F1BC00;
+    --bs-primary-light: #FFEDEF;
+    --bs-success-light: #E8F2FA;
+    --bs-danger-light: #FFE9E3;
+    --bs-warning-light: #FFF8DD;
+    --bs-success-rgb: 19, 96, 153;
+    --bs-primary-rgb: 237, 32, 54;
+    --bs-danger-rgb: 255, 92, 51;
+    --bs-warning-rgb: 255, 199, 0;
+    --bs-component-active-bg: var(--bs-primary);
+    --bs-component-hover-color: var(--bs-primary);
+    --bs-component-checked-bg: var(--bs-primary);
+    --bs-gray-100: #F9F9F9;
+    --bs-gray-100-rgb: 249,249,249;
+    --bs-gray-200: #F1F1F2;
+    --bs-gray-200-rgb: 241,241,242;
+    --bs-gray-300: #E1E3EA;
+    --bs-gray-300-rgb: 225,227,234;
+    --bs-gray-400: #D8D8E5;
+    --bs-gray-400-rgb: 216,216,229;
+    --bs-gray-500: #A1A5B7;
+    --bs-gray-500-rgb: 161,165,183;
+    --bs-gray-600: #7E8299;
+    --bs-gray-600-rgb: 126,130,153;
+    --bs-gray-700: #5E6278;
+    --bs-gray-700-rgb: 94,98,120;
+    --bs-gray-800: #3F4254;
+    --bs-gray-800-rgb: 63,66,84;
+    --bs-gray-900: #181C32;
+    --bs-gray-900-rgb: 24,28,50;
+    --bs-light: #F9F9F9;
+    --bs-text-gray-100: var(--bs-gray-100);
+    --bs-text-gray-200: var(--bs-gray-200);
+    --bs-text-gray-300: var(--bs-gray-300);
+    --bs-text-gray-400: var(--bs-gray-400);
+    --bs-text-gray-500: var(--bs-gray-500);
+    --bs-text-gray-600: var(--bs-gray-600);
+    --bs-text-gray-700: var(--bs-gray-700);
+    --bs-text-gray-800: var(--bs-gray-800);
+    --bs-text-gray-900: var(--bs-gray-900);
+}
+
+
 @font-face {
-  font-family: "Golos Text";
-  src: url("fonts/GolosText-Regular.ttf");
-  font-weight: 400;
+    font-family: "Golos Text";
+    src: url("fonts/GolosText-Regular.ttf");
+    font-weight: 400;
 }
 
 @font-face {
-  font-family: "Golos Text";
-  src: url("fonts/GolosText-Medium.ttf");
-  font-weight: 500;
+    font-family: "Golos Text";
+    src: url("fonts/GolosText-Medium.ttf");
+    font-weight: 500;
 }
 
 @font-face {
-  font-family: "Golos Text";
-  src: url("fonts/GolosText-SemiBold.ttf");
-  font-weight: 600;
+    font-family: "Golos Text";
+    src: url("fonts/GolosText-SemiBold.ttf");
+    font-weight: 600;
 }
 
 @font-face {
-  font-family: "Golos Text";
-  src: url("fonts/GolosText-Bold.ttf");
-  font-weight: 700;
+    font-family: "Golos Text";
+    src: url("fonts/GolosText-Bold.ttf");
+    font-weight: 700;
 }
 
 @font-face {
-  font-family: Inter;
-  src: url("fonts/Inter-Regular.ttf");
-  font-weight: 400;
+    font-family: Inter;
+    src: url("fonts/Inter-Regular.ttf");
+    font-weight: 400;
 }
 
 @font-face {
-  font-family: Inter;
-  src: url("fonts/Inter-Medium.ttf");
-  font-weight: 500;
+    font-family: Inter;
+    src: url("fonts/Inter-Medium.ttf");
+    font-weight: 500;
 }
 
 @font-face {
-  font-family: Inter;
-  src: url("fonts/Inter-SemiBold.ttf");
-  font-weight: 600;
+    font-family: Inter;
+    src: url("fonts/Inter-SemiBold.ttf");
+    font-weight: 600;
 }
 
 @font-face {
-  font-family: Inter;
-  src: url("fonts/Inter-Bold.ttf");
-  font-weight: 700;
+    font-family: Inter;
+    src: url("fonts/Inter-Bold.ttf");
+    font-weight: 700;
 }
 
-
-
+.mobile-menu {
+    background-color: #133D62;
+}
 
 .form-select-lg,
 .btn-lg {
-  height: 48px;
+    height: 48px !important;
+    box-sizing: border-box;
 }
 
 h1.page-heading {
-  font-size: 24px !important;
+    font-size: 24px !important;
 }
 
 svg.icon {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 
 svg.hidden {
-  display: none;
+    display: none;
 }
 
 .btn {
-  display: flex;
-  align-items: center;
-  width: max-content;
+    display: flex;
+    align-items: center;
+    width: max-content;
 }
 
 [data-kt-app-header-fixed="true"] .app-header {
-  position: sticky;
+    position: sticky;
 }
 
 .app-header {
-  svg.icon path {
-    fill: #808290;
-  }
+    svg.icon path {
+        fill: #808290;
+    }
 }
 
 #kt-auth-root {
-  background: url("/src/assets/images/auth/auth-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
+    background: url("/src/assets/images/auth/auth-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .dashboard-app {
-  .form-select {
-    min-width: 160px;
-    box-sizing: border-box;
-  }
-
-  .menu-item svg.icon {
-    margin-right: 15px;
-  }
-
-  .card-body .col {
-    border-radius: 6px;
-    border: 0.5px dashed #D8D8E5;
-  }
-
-  .card-body .col.green {
-    border: 0.5px dashed #0EAB4C;
-    background: #EFFFF5;
-
-    div {
-      color: #0EAB4C !important;
+    .form-select {
+        min-width: 160px;
+        box-sizing: border-box;
     }
-  }
 
-  .card-body .col.red {
-    border: 0.5px dashed #E92121;
-    background: #FFF1F1;
-
-    div {
-      color: #E92121 !important;
+    .menu-item svg.icon {
+        margin-right: 15px;
     }
-  }
+
+    .card-body .col {
+        border-radius: 6px;
+        border: 0.5px dashed #D8D8E5;
+    }
 }
 
 h2 {
-  font-family: 'Golos Text', sans-serif;
+    font-family: 'Golos Text', sans-serif;
 }
 
+[data-kt-app-layout="dark-header"] .app-header {
+    background-color: #133D62;
+}
+
+[data-kt-app-layout="dark-header"] .app-header-menu .menu>.menu-item>.menu-link .menu-title {
+    color: #fff;
+}
+
+[data-kt-app-layout="dark-header"] .app-header-menu .menu>.menu-item.here>.menu-link {
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+
+.text-success-active {
+    color: var(--bs-success-active) !important;
+}
+
+.border-success-active {
+    border-color: var(--bs-success-active) !important;
+}
+
+.menu-sub-dropdown .menu-link:hover {
+    svg path {
+        fill: #0e7732;
+    }
+}
+
+.form-check-input:checked {
+    background-color: var(--bs-primary);
+}
+
+.card-toolbar-custom {
+    margin-top: -68px;
+    position: absolute;
+    right: 29px;
+    width: auto;
+    display: flex;
+
+    @media all and (width <=575px) {
+        margin: -16px 0 12px 28px;
+        position: static;
+    }
+}
+
+.h-max {
+    height: max-content;
+}
+
+.h-min {
+    height: min-content;
+}
