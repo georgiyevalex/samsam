@@ -53,4 +53,5 @@
     --bs-text-warning: var(--bs-warning);
     --bs-header-color: #000000;
     --bs-header-active: rgba(255, 255, 255, 0.1);
+    --statistics-top-bg: url('/src/assets/images/settings/top-green.png') 50% 20% /cover no-repeat;
 }
